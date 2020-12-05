@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p>To-do List Page</p>
+    <h1>Add item to to-do list</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.todotext(size=60) }}<br>
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
 {% endblock %}
