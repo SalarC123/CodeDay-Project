@@ -1,14 +1,20 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect, flash
+from forms import TodoListForm
+from config import Config
 
 app = Flask(__name__)
+app.config.from_object(Config)
 
 @app.route('/')
 def main():
     return render_template('frontpage.html')
 
-@app.route('/todolist')
+@app.route('/todolist', methods=['GET', 'POST'])
 def todolist():
-    return render_template('todolist.html')
+    form = TodoListForm()
+    if form.validate_on_submit:
+        flash('Your item has been added!')
+    return render_template('todolist.html', form = form)
 
 @app.route('/goals')
 def goals():
