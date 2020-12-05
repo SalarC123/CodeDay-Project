@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Study Tool</title>
+        <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="charset" content="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a class='logo' href="{{ url_for('main') }}"><img width='100%' height='100%' src="/images/logo.png" alt="Logo"></a>
+                <a class='navlink' href={{ url_for('flashcards') }}>Flashcards</a>
+                <a class='navlink' href={{ url_for('tests') }}>Tests</a>
+                <a class='navlink' href={{ url_for('schedule') }}>Schedule</a>
+                <a class='navlink' href={{ url_for('notes') }}>Notes</a>
+                <a class='navlink' href={{ url_for('brainbreaks') }}>Brain Breaks</a>
+                <a class='navlink' href={{ url_for('goals') }}>Goals</a>
+                <a class='navlink' href={{ url_for('todolist') }}>To-do List</a>
+            </nav>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
