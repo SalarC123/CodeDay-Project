@@ -36,3 +36,22 @@ nav {
     margin-left:2%;
     float:left;
 }
+
+.header {
+    margin-left: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.desc {
+    display: block;
+    float:left;
+    font-size: 130%;
+    margin: 10px;
+    /* margin-left: 3%; */
+    text-align: center;
+    border: 3px solid #3258a8;
+    border-radius: 20px;
+    max-width: 28%;
+    padding: 10px;
+}
