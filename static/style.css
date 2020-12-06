@@ -55,32 +55,45 @@ nav {
     max-width: 28%;
     padding: 10px;
 }
-.pseudo-three-col {
-  position: relative;
-  background: #ffffff;
-  z-index: 1;
-  width: 100%;
+#page-wrap { width: 80%; margin: 60px auto; }
+#page-wrap > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#nicolas-gallagher {
+      position: relative; 
+      background: #eee; 
+      z-index: 1; 
+      width: 100%; 
+    }
+#nicolas-gallagher .col { 
+      position: relative; 
+      width: 27%; 
+      padding: 3%; 
+      float: left; 
+    }
+#nicolas-gallagher .col:nth-child(1) { left: 33%; }
+#nicolas-gallagher .col:nth-child(2) { left: -33.3%; }
+#nicolas-gallagher .col:nth-child(3) { left: 0; }
+#nicolas-gallagher:before, #nicolas-gallagher:after {
+       content: "";
+       position: absolute;
+       z-index: -1;
+       top: 0;
+       left: 33.4%;
+       width: 33.4%;
+       height: 100%;
+       background: #ccc;
 }
-.pseudo-three-col .col {
-  position: relative;
-  width: 27%;
-  padding: 3%;
-  float: left;
-}
-.pseudo-three-col .col:nth-child(1) { left: 33%; }
-.pseudo-three-col .col:nth-child(2) { left: -33.3%; }
-.pseudo-three-col .col:nth-child(3) { left: 0; }
-.pseudo-three-col:before, .pseudo-three-col:after {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 33.4%;
-  width: 33.4%;
-  height: 100%;
-  background: #ffffff;
-}
-.pseudo-three-col:after {
-  left: 66.667%;
-  background: #ffffff;
+    #nicolas-gallagher:after {
+       left: 66.667%;
+       background: #eee;
 }
