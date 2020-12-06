@@ -70,7 +70,9 @@ nav {
 
 #nicolas-gallagher {
       position: relative; 
-      background: #eee; 
+      background: #ffffff; 
+      border: 2px solid #3258a8;
+      border-radius: 2px;
       z-index: 1; 
       width: 100%; 
     }
@@ -79,6 +81,8 @@ nav {
       width: 27%; 
       padding: 3%; 
       float: left; 
+      border: 2px solid #3258a8;
+      border-radius: 2px;
     }
 #nicolas-gallagher .col:nth-child(1) { left: 33%; }
 #nicolas-gallagher .col:nth-child(2) { left: -33.3%; }
@@ -93,8 +97,13 @@ nav {
        width: 33.4%;
        height: 100%;
        background: #ffffff;
+       border: 2px solid #3258a8;
+      border-radius: 2px;
 }
     #nicolas-gallagher:after {
        left: 66.667%;
        background: #ffffff;
+       border: 2px solid #3258a8;
+       text-align: center;
+       border-radius: 2px;
 }
