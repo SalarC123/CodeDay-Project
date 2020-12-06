@@ -66,8 +66,8 @@ nav {
 .cardGroup__card {
     flex: 1 1 0%;
 
-    border: none;
-    border-radius: 0;
+    border: 1px solid #3258a8;
+    border-radius: 2px;
   }
 .cardGroup__card + .cardGroup__card {
     border-left: 1px solid ##3258a8;
