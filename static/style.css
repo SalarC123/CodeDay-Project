@@ -81,6 +81,7 @@ nav {
       width: 27%; 
       padding: 3%; 
       float: left; 
+      text-align: center;
       border: 2px solid #3258a8;
       border-radius: 2px;
     }
@@ -100,7 +101,7 @@ nav {
        border: 2px solid #3258a8;
       border-radius: 2px;
 }
-    #nicolas-gallagher:after {
+#nicolas-gallagher:after {
        left: 66.667%;
        background: #ffffff;
        border: 2px solid #3258a8;
