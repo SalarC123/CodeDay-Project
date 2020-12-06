@@ -55,3 +55,25 @@ nav {
     max-width: 28%;
     padding: 10px;
 }
+.cardGroup {
+  display: flex;
+
+  border: 1px solid #3258a8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+  .cardGroup__card {
+    flex: 1 1 0%;
+
+    border: none;
+    border-radius: 0;
+  }
+
+  .cardGroup__card + .cardGroup__card {
+    border-left: 1px solid ##3258a8;
+  }
+
+  .cardGroup__cardDescription {
+    flex: 1 1 auto;
+  }
