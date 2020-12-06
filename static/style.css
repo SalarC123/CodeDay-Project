@@ -55,21 +55,32 @@ nav {
     max-width: 28%;
     padding: 10px;
 }
-.cardGroup {
-  display: flex;
-  border: 1px solid #3258a8;
-  border-radius: 4px;
-  overflow: hidden;
+.pseudo-three-col {
+  position: relative;
+  background: #ffffff;
+  z-index: 1;
+  width: 100%;
 }
-.cardGroup__card {
-    flex: 1 1 0%;
-
-    border: 1px solid #3258a8;
-    border-radius: 2px;
-  }
-.cardGroup__card + .cardGroup__card {
-    border-left: 5px solid #3258a8;
-  }
-.cardGroup__cardDescription {
-    flex: 1 1 auto;
-  }
+.pseudo-three-col .col {
+  position: relative;
+  width: 27%;
+  padding: 3%;
+  float: left;
+}
+.pseudo-three-col .col:nth-child(1) { left: 33%; }
+.pseudo-three-col .col:nth-child(2) { left: -33.3%; }
+.pseudo-three-col .col:nth-child(3) { left: 0; }
+.pseudo-three-col:before, .pseudo-three-col:after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 33.4%;
+  width: 33.4%;
+  height: 100%;
+  background: #ffffff;
+}
+.pseudo-three-col:after {
+  left: 66.667%;
+  background: #ffffff;
+}
