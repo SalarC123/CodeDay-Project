@@ -2,7 +2,7 @@
 
 ## How It Looks Right Now
 
-![Current Website](https://github.com/SalarC123/CodeDay-Project/blob/main/currentweb.png)
+https://salarc123.github.io/CodeDay-Project/
 
 ## Checklist
 
