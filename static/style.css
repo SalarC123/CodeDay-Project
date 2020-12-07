@@ -55,3 +55,56 @@ nav {
     max-width: 28%;
     padding: 10px;
 }
+#page-wrap { width: 80%; margin: 60px auto; }
+#page-wrap > div { margin: 0 0 50px 0; min-width: 500px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#nicolas-gallagher {
+      position: relative; 
+      background: #ffffff; 
+      border: 2px solid #3258a8;
+      border-radius: 2px;
+      z-index: 1; 
+      width: 100%; 
+    }
+#nicolas-gallagher .col { 
+      position: relative; 
+      width: 27%; 
+      padding: 3%; 
+      float: left; 
+      text-align: center;
+      border: 2px solid #3258a8;
+      border-radius: 2px;
+    }
+#nicolas-gallagher .col:nth-child(1) { left: 33%; }
+#nicolas-gallagher .col:nth-child(2) { left: -33.3%; }
+#nicolas-gallagher .col:nth-child(3) { left: 0; }
+#nicolas-gallagher:before, #nicolas-gallagher:after {
+       content: "";
+       text-align: center;
+       position: absolute;
+       z-index: -1;
+       top: 0;
+       left: 33.4%;
+       width: 33.4%;
+       height: 100%;
+       background: #ffffff;
+       border: 2px solid #3258a8;
+       border-radius: 2px;
+}
+#nicolas-gallagher:after {
+       left: 66.667%;
+       background: #ffffff;
+       border: 2px solid #3258a8;
+       text-align: center;
+       border-radius: 2px;
+}
