@@ -2,12 +2,12 @@ from flask import Flask, render_template, url_for, redirect, flash
 from forms import TodoListForm
 from config import Config
 
-app = Flask(__name__)
+app = Flask(__name__) # template_folder parameter
 app.config.from_object(Config)
 
 @app.route('/')
 def main():
-    return render_template('frontpage.html')
+    return render_template('index.html')
 
 @app.route('/todolist', methods=['GET', 'POST'])
 def todolist():
