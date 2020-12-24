@@ -12,4 +12,4 @@ https://salarc123.github.io/CodeDay-Project/
 - [ ] Come up with name and logo of site (I have one in the images folder already, but we can do something else)
 - [ ] Deployment on Heroku
 - [ ] And more...
-- [ ] Notes App Inspired by https://github.com/lucia-gm/note-app under MIT license
+- [ ] Notes App Inspired by https://github.com/lucia-gm/note-app under MIT license at the bottom of the license page on repo
