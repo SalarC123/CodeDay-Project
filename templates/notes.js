@@ -1,3 +1,5 @@
+// still need to get everything to store locally and render properly using gh pages
+
 const form = {}
 form.noteText = document.querySelector('#formNoteText');
 form.addButton = document.querySelector('#formAddButton');
