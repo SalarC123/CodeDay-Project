@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Study Tool</title>
-        <link rel="stylesheet" href="static/style.css">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href={{ style_sheet_name }}>
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         <meta name="charset" content="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
     <body>
-        <div class="container">
+        <div class="nav-container">
             <nav>
-                <a class='logo' href="{{ url_for('main') }}"><img width='50%' height='50%' src="https://github.com/SalarC123/CodeDay-Project/blob/main/images/logo.png?raw=true" alt="Logo"></a>
-                <a class='navlink' href="templates/flashcard.html">Flashcards</a>
-                <a class='navlink' href="templates/tests.html>Tests"></a>
-                <a class='navlink' href="templates/schedule.html">Schedule</a>
-                <a class='navlink' href="templates/notes.html">Notes</a>
-                <a class='navlink' href="templates/brainbreaks.html">Brain Breaks</a>
-                <a class='navlink' href="templates/goals.html">Goals</a>
-                <a class='navlink' href="templates/todolist.html">To-do List</a>
+                <a class='logo' href={{ url_for('main') }}><img width='50%' height='50%' src="https://github.com/SalarC123/CodeDay-Project/blob/main/images/logo.png?raw=true" alt="Logo"></a>
+                <a class='navlink' href={{ url_for('flashcards') }}>Flashcards</a>
+                <a class='navlink' href={{ url_for('notes') }}></a>
+                <a class='navlink' href={{ url_for('schedule') }}>Schedule</a>
+                <a class='navlink' href={{ url_for('notes') }}>Notes</a>
+                <a class='navlink' href={{ url_for('brainbreaks') }}>Brain Breaks</a>
+                <a class='navlink' href={{ url_for('goals') }}>Goals</a>
+                <a class='navlink' href={{ url_for('todolist') }}>To-do List</a>
             </nav>
             {% block content %}
             {% endblock %}
         </div>
+        <script type="text/javascript" src={{ script_name }}></script>
     </body>
 </html>
