@@ -2,7 +2,8 @@ body {
     margin:0;
     padding:0;
 }
-.container {
+
+.nav-container {
     width:100%;
     min-height:100vh;
     /* background-image: url(https://i.pinimg.com/originals/04/34/89/043489e7922dabf9902965b964ca04a5.jpg); */
