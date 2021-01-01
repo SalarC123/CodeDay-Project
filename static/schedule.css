@@ -1,0 +1,42 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR STYLING */
+
+.nav-container {
+    width:100%;
+    min-height:100vh;
+    /* background-image: url(https://i.pinimg.com/originals/04/34/89/043489e7922dabf9902965b964ca04a5.jpg); */
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+    position:relative;
+    overflow:cover;
+}
+nav {
+    background-image:linear-gradient(to right, #5edefb, #6f62e3);
+    overflow:hidden;
+}
+.navlink {
+    display:block;
+    padding:29px 30px;
+    color:white;
+    float:right;
+    text-decoration:none;
+    text-align:center;
+    font-size:20px;
+    font-family:Palatino;
+}
+.navlink:hover {
+    background-color:#3258a8;
+}
+.navlink:active {
+    background-color:#3248a8;
+}
+.logo {
+    margin-left:2%;
+    float:left;
+}
