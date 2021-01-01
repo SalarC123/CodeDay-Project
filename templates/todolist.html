@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>TEST</h1>
+    <div class="wrapper">
+        <h1>To-do List</h1>
+        <div class="form-input">
+            <input type="text" name="" id="add-reminder">
+            <button onclick="addToList()" id='submit'>Add Reminder</button>
+        </div>
+        <ul class="list">
+
+        </ul>
+    </div>
 {% endblock %}

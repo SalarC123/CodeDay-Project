@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: whitesmoke;
+    /* color: #360066; */
+}
+
 /* REQUIRED NAV STYLING */
 
 .nav-container {
@@ -39,4 +44,76 @@ nav {
 .logo {
     margin-left:2%;
     float:left;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    margin: 1rem 1rem;
+    font-size: 3em;
+    color: #360066;
+}
+
+.form-input {
+    
+}
+
+#add-reminder {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    border: 3px solid black;
+}
+
+#submit {
+    font-size: 20px;
+    padding: 7px;
+    background-color: #8902FF;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+#submit:hover {
+    background-color: #e600e6;
+    transition: background-color 0.4s;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+}
+
+.list-element {
+    margin: 1rem 1rem;
+    font-size: 20px;
+    padding: 10px;
+    border:2px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+.reminder-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reminder-wrapper button {
+    outline: none;
+    border:none;
+    background-color: whitesmoke;
+    padding:5px;
+    font-size: 30px;
+    opacity: 0.6;
+}
+
+.reminder-wrapper button:hover {
+    opacity: 1;
 }
